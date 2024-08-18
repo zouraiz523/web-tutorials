@@ -1,0 +1,24 @@
+html, body {
+    background-color: #fcfcfc;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  
+  button {
+    background-color: blue;
+    border: none;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    transform-style: preserve-3d;
+    cursor: pointer;
+  }
+  
+  .button-wrapper {
+    perspective: 400px;
+  }
+  
