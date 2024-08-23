@@ -1,0 +1,27 @@
+
+@import "https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap";
+body{
+  font-family: 'Roboto Mono', monospace;
+  background: #36D1DC; 
+  background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  
+  background: linear-gradient(to right, #5B86E5, #36D1DC); 
+  color:#fff; }
+
+h1{
+  text-align:center;
+  font-size: 2.8em;
+  margin: 10% auto;
+  text-transform:uppercase;
+  animation: textAnimator 5s steps(22);
+  animation-iteration-count: infinite;
+  overflow:hidden;
+  white-space: nowrap;
+  border-right: 6px solid #fff;
+  width: 22ch;
+}
+
+@keyframes textAnimator{
+  0%{ width: 0ch; }
+  100%{ width: 22ch; }
+}
+
