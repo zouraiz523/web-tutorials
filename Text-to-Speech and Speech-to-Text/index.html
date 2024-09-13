@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Text-to-Speech and Speech-to-Text | Zouraiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Text-to-Speech & Speech-to-Text</h1>
+
+    <!-- Text-to-Speech Section -->
+    <div>
+        <h2>Text to Speech</h2>
+        <textarea id="textToSpeak" rows="4" cols="50" placeholder="Enter text to speak..."></textarea>
+        <br>
+        <button onclick="speakText()">Speak</button>
+    </div>
+    <!-- Speech-to-Text Section -->
+    <div>
+        <h2>Speech to Text</h2>
+        <button onclick="startRecognition()">Start Recognition</button>
+        <p id="recognizedText">Recognized text will appear here...</p>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
