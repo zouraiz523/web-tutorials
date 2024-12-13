@@ -1,21 +1,12 @@
-    // VanillaTilt uygulanması
-    VanillaTilt.init(document.querySelectorAll(".sci li a"), {
-        max: 30,
-        speed: 400,
-        glare: true,
-        "max-glare": 0.5
+$(document).ready(function() {
+    // Ensure the counterUp plugin is applied
+    $('.icon .counter .numb').counterUp({
+        delay: 20, 
+        time: 1000 
     });
 
-    // Arka plan rengini değiştirme
-    let list = document.querySelectorAll(".sci li");
-    let bg = document.querySelector("body");
-
-    list.forEach((element) => {
-        element.addEventListener("mouseover", function(event) {
-            let color = element.style.getPropertyValue("--clr");
-            bg.style.backgroundColor = color;
-        });
-        element.addEventListener("mouseleave", function() {
-            bg.style.backgroundColor = '#fff';
-        });
-    });
+    // Add the "show" class after counter animation completes
+    setTimeout(function() {
+        $('.icon .text').addClass("show");
+    }, 1000); 
+});
