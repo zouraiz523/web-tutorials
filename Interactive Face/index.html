@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Face</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- jQuery CDN -->
+</head>
+<body>
+    <div class="face">
+        <div class="eyes">
+            <div class="eye"></div>
+            <div class="eye"></div>
+        </div>
+    </div>
+
+    <script>
+        $('body').on('mousemove', function(event) {
+            $('.eye').each(function () {
+                const eye = $(this);
+                const eyeRect = eye[0].getBoundingClientRect(); // Correct DOM access
+                const eyeX = eyeRect.left + eyeRect.width / 2; 
+                const eyeY = eyeRect.top + eyeRect.height / 2;
+
+                // Mouse movement calculation
+                const radian = Math.atan2(event.pageY - eyeY, event.pageX - eyeX);
+                const rotation = radian * (180 / Math.PI);
+
+                eye.css('transform', `rotate(${rotation + 90}deg)`); // Add 90 to adjust eye direction
+            });
+        });
+    </script>
+</body>
+</html>
