@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Emoji Feedback Card</title>
+    <link rel="stylesheet" href="styles.css">
+</head> 
+
+<div class="feedback-container" id="feedbackContainer">
+    <div class="feedback-header">
+        <h2>How was your experience?</h2>
+        <p>Please let us know your thoughts</p>
+    </div>
+
+    <div class="emoji-container">
+        <div class="emoji" data-rating="1">
+            <span>😡</span>
+            <p>Terrible</p>
+        </div>
+        <div class="emoji" data-rating="2">
+            <span>😕</span>
+            <p>Bad</p>
+        </div>
+        <div class="emoji" data-rating="3">
+            <span>😐</span>
+            <p>Okay</p>
+        </div>
+        <div class="emoji" data-rating="4">
+            <span>😊</span>
+            <p>Good</p>
+        </div>
+        <div class="emoji" data-rating="5">
+            <span>😍</span>
+            <p>Excellent</p>
+        </div>
+    </div>
+
+    <div class="comment-section">
+        <textarea placeholder="Tell us more about your experience..."></textarea>
+    </div>
+
+    <button class="submit-btn" id="submitBtn">Submit Feedback</button>
+
+    <div class="thank-you" id="thankYou">
+        <span>🎉</span>
+        <h3>Thank You!</h3>
+        <p>Your feedback is valuable to us and helps us improve.</p>
+        <button class="new-feedback-btn" id="newFeedbackBtn">Give New Feedback</button>
+    </div>
+</div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
