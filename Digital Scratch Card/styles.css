@@ -1,0 +1,110 @@
+  
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    
+    .container {
+      text-align: center;
+      max-width: 500px;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    
+    h1 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+    
+    p {
+      color: #666;
+      margin-bottom: 30px;
+    }
+    
+    /* Scratch Card Container */
+    .scratch-container {
+      position: relative;
+      width: 300px;
+      height: 150px;
+      margin: 0 auto 30px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    
+    .coupon-code {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, #7c3aed, #4f46e5);
+      color: #fff;
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+    }
+    
+    canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      cursor: pointer;
+      z-index: 2;
+    }
+    
+    .scratch-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #333;
+      font-weight: bold;
+      pointer-events: none;
+      opacity: 0.8;
+      z-index: 3;
+    }
+    
+   
+    .progress {
+      width: 300px;
+      height: 10px;
+      background-color: #ddd;
+      border-radius: 5px;
+      margin: 0 auto 20px;
+      overflow: hidden;
+    }
+    
+    .progress-bar {
+      height: 100%;
+      width: 0%;
+      background-color: #4f46e5;
+      transition: width 0.3s ease;
+    }
+    
+  
+    .reset-btn {
+      padding: 10px 20px;
+      background-color: #4f46e5;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.2s;
+    }
+    
+    .reset-btn:hover {
+      background-color: #7c3aed;
+    }
