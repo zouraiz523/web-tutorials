@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Drag & Drop Upload with Preview</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+     <div class="container">
+        <div class="header">
+            <h1>Image Uploader</h1>
+            <p>Drag & drop images or click to browse</p>
+        </div>
+        
+        <div class="upload-container">
+            <div class="upload-area" id="dropArea">
+                <i>📁</i>
+                <h3>Drag & Drop Files Here</h3>
+                <p>Supported: JPG, PNG, GIF, WEBP (Max 5MB)</p>
+                <button class="browse-btn">Browse Files</button>
+                <input type="file" class="file-input" id="fileInput" accept="image/*" multiple>
+            </div>
+            
+            <div class="preview-container" id="previewContainer">
+                <h3 class="preview-title">Image Previews</h3>
+                <div class="preview-area" id="previewArea"></div>
+                <div class="file-info" id="fileInfo">No files selected</div>
+                <div class="actions">
+                    <button class="upload-all-btn" id="uploadAllBtn">Upload All</button>
+                    <button class="clear-all-btn" id="clearAllBtn">Clear All</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="toast" id="toast"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>
